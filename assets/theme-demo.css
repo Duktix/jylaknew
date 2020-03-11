@@ -129,14 +129,7 @@ body{
 		}
 	}
 
-	.nav>li a 
-{
-    font-size: 14px !important;
-    font-weight: 600;
-	font-family: 'Montserrat', sans-serif;
-}
-
-ul.nav.navbar-nav.navbar-right {
+	ul.nav.navbar-nav.navbar-right {
     margin-top: 15px;
 }
 
@@ -390,11 +383,21 @@ a.back-to-top{
     background-color: transparent !important;
     font-size: 18px;
 }
+.page-25 .navbar-custom .navbar-nav li a{
+color:#ffffff;
+}
 
 	
 .navbar-custom{
 		background-color:rgba(219,206,222,0);
 }
+	.navbar-absolute-top{
+		position: absolute;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		background-color: transparent;
+	}
 
 .header3 .slide-toggle span,.header4 .slide-toggle span{
 	
