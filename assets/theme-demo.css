@@ -82,7 +82,7 @@ body{
 		
 		
 	}
-	.navbar-custom .navbar-nav li:hover > a{
+	.navbar-custom .navbar-nav li:hover > a,.navbar-custom .navbar-nav li.active > a{
 		background-color:rgba(255,255,255,0);
 		color:#1fde82;
 	}
@@ -114,11 +114,11 @@ body{
 		
 		
 	}
-	.navbar-custom .navbar-nav li ul.sub-menu li:hover > a{
+	.navbar-custom .navbar-nav li ul.sub-menu li:hover > a,.navbar-custom .navbar-nav li ul.sub-menu li.subactive > a{
 		background-color:rgba(255,255,255,0);
 		color:rgba(0,0,0,0.5);
 	}
-	.navbar-custom .nav li ul.sub-menu li a:focus, .navbar-custom .nav li ul.sub-menu li.active a{
+	.navbar-custom .nav li ul.sub-menu li a:focus, .navbar-custom .nav li ul.sub-menu li a:active{
 		background-color:rgba(255,255,255,0);
 		color:rgba(0,0,0,0.5);
 	}
