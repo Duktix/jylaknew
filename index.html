@@ -108,7 +108,7 @@ role="navigation" >
 				</div>
 				<div class="navbar-collapse collapse menustyle5" id="navbar-menu">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="menu-item"><a class="nav-link " href="http://counsel.frezit.com/pages/5/preview" target="_self"> HOME</a><small></small></li><li class="menu-item"><a class="nav-link " href="http://counsel.frezit.com/pages/8/preview" target="_self"> ABOUT</a><small></small></li><li class="menu-item"><a class="nav-link " href="#" target="_self"> SERVICE</a><small></small></li><li class="menu-item"><a class="nav-link " href="#" target="_self"> WHY WE BEST</a><small></small></li><li class="menu-item"><a class="nav-link " href="/contact-us/" target="_self"> CONTACT</a><small></small></li>
+						<li class="menu-item"><a class="nav-link " href="home" target="_self"> Home</a><small></small></li><li class="menu-item"><a class="nav-link " href="about-us" target="_self"> About Us</a><small></small></li><li class="menu-item"><a class="nav-link " href="our-team" target="_self"> Our Team</a><small></small></li><li class="menu-item"><a class="nav-link " href="#" target="_self"> Services</a><small></small><ul class="sub-menu"><li class="menu-item"><a class="nav-link " href="e-mail-marketing" target="_self"> E-Mail Marketing</a><small></small></li><li class="menu-item"><a class="nav-link " href="web-designing" target="_self"> Web Designing</a><small></small></li><li class="menu-item"><a class="nav-link " href="pay-per-click" target="_self"> PPC (Pay Per Click)</a><small></small></li><li class="menu-item"><a class="nav-link " href="search-engine-optimization" target="_self"> Search Engine Optimization</a><small></small></li><li class="menu-item"><a class="nav-link " href="content-writing" target="_self"> Content Writing</a><small></small></li><li class="menu-item"><a class="nav-link " href="web-data-scraping" target="_self"> Web Data Scraping</a><small></small></li></ul></li><li class="menu-item"><a class="nav-link " href="contact-us" target="_self"> Contact Us</a><small></small></li>
 					</ul>
 				</div>
 			</div>
@@ -507,7 +507,7 @@ role="navigation" >
 				<input type="hidden" class="form-control" name="logo" value="http://www.jylak.inhttp://www.jylak.in/uploads/2019/07/logo_1419461679.png">
 				<input type="hidden" class="form-control" name="url" value="http://www.jylak.in">
 				<input type="hidden" class="form-control" name="message_body" value="No Message">
-				<div class="form-group col-sm-12 ">
+				<div class="form-group col-sm-12 text-left">
 				<button type="submit" class="btn btn-default submit-btn">Send Message</button>
 				</div>
 		</form>
@@ -524,11 +524,23 @@ role="navigation" >
 				border-bottom-left-radius: 0;
 				border-top-right-radius: 0;
 				border-bottom-right-radius: 0;
-																font-size: 15px;
-				height: auto;
+				border-left-color: rgba(255,255,255,1);
+				border-right-color: rgba(255,255,255,1);
+				border-top-color: rgba(255,255,255,1);
+				border-bottom-color: rgba(255,255,255,1);
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+							margin-bottom: 10px;
+				font-size: 15px;
+				border-style: solid;
+			height: auto;
 }
 #form_6 button[type="submit"]{
-					border-left-width: 0;
+			background-color: rgba(255,255,255,1);
+				color: rgba(0,0,0,1);
+				border-left-width: 0;
 				border-right-width: 0;
 				border-top-width: 0;
 				border-bottom-width: 0;
@@ -536,7 +548,18 @@ role="navigation" >
 				border-bottom-left-radius: 0;
 				border-top-right-radius: 0;
 				border-bottom-right-radius: 0;
-																	height: auto;
+				border-left-color: rgba(255,255,255,1);
+				border-right-color: rgba(255,255,255,1);
+				border-top-color: rgba(255,255,255,1);
+				border-bottom-color: rgba(255,255,255,1);
+				padding-left: 10px;
+				padding-right: 10px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+							margin-bottom: 10px;
+				font-size: 15px;
+				border-style: solid;
+			height: auto;
 		cursor: pointer;
 }
 </style>
@@ -584,7 +607,7 @@ jQuery(document).ready(function(){
 							jQuery.ajax({
 						type: "POST",
 						url: "https://mx.frezit.com",
-						data: { data: jQuery('#form_6').serialize(), adminmail:'jbora201@gmail.com', recipients:'jbora201@gmail.com', from: 'jbora201@gmail.com', fromname: 'counsel', subject:'', replyto:'' },
+						data: { data: jQuery('#form_6').serialize(), adminmail:'jylakweb@gmail.com', recipients:'jbora201@gmail.com', from: 'jylakweb@gmail.com', fromname: 'Jylak', subject:'From Jylak', replyto:'' },
 						dataType: "text",
 						success: function(resultData){
 							console.log(resultData);
@@ -598,6 +621,7 @@ jQuery(document).ready(function(){
 										jQuery('#form_6_success').fadeIn();
 										jQuery('#form_6').find('button[type="submit"]').prop('disabled', false);
 										jQuery('#form_6').trigger('reset');
+																					jQuery('#form_6').hide();
 																			}, 1000);
 															}
 						}
