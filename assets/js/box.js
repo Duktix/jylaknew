@@ -47,7 +47,7 @@
 
 
     /* Animate Content/Container */
-    $('.is-container').appear();    
+    $('.is-container').appear();
     $('.is-container').each(function () {
         if ($(this).is(':appeared')) {
             applyAnimation($(this));
@@ -64,6 +64,8 @@
     $('.is-container').on('disappear', function () {
         removeAnimation($(this));
     });
+
+    
 
 });
 
@@ -138,7 +140,7 @@ function applyAnimationSection($section) {
     if ($section.hasClass('is-animated')) {
 
         if ($section.data('animated') != 'done') {
-        
+
             if(n>0) $section.css('animation-delay', n + 's');
             n = n + 0.2;
 
@@ -160,10 +162,10 @@ function applyAnimationSection($section) {
             if ($section.hasClass('is-zoomIn')) $section.addClass('zoomIn');
 
             if ($section.hasClass('once')) $section.data('animated', 'done');
-           
+
         }
     }
-    
+
     $section.find('.is-box.is-animated').each(function () {
 
         if ($(this).data('animated') != 'done') {
@@ -257,7 +259,7 @@ if ($activeSect.next().html()) {
 demo($activeSect.next());
 return false;
 }
-});        
+});
 }, 700);
 }
 */
