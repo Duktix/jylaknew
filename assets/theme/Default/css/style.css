@@ -593,7 +593,8 @@ figure.eight p {
 
 /*======= 1.Reset ======== */
 body {
-  color: #333;
+  font-family: 'Varela Round', sans-serif;
+  color: #496174;
   background: #fff;
   font-size: 14px;
   line-height: 22px;
@@ -613,10 +614,6 @@ body {
 a:hover,a:focus,.a:active {
   text-decoration: none;
   outline: none !important;
-}
-
-.navbar-brand{
-	padding:0;
 }
 
 /* Back to top */
@@ -1372,10 +1369,12 @@ position:absolute;right:10px;bottom:10px;width:400px;margin:0
 }
 
 .sticky-wrapper {
+	position: absolute;
 	width: 100%;
 }
 
 .sticky-wrapper.is-sticky .navbar-custom {
+	padding: 10px 0px !important;
   background-color: #5d9cec;
 }
 

@@ -606,9 +606,7 @@ figure.effect-hera figcaption::before,figure.effect-hera figcaption::after{    w
 .form_widget *{
 	line-height:1.7;
 }
-.checkbox input[type="checkbox"],.radio input[type="radio"],.checkbox label::before,.radio label::before,.radio input[type="radio"]:checked + label::after,.checkbox input[type="checkbox"]:checked + label::after{
-	margin-top: 4px;
-}
+
 .checkbox {
   padding-left: 20px;
 }
@@ -643,7 +641,6 @@ figure.effect-hera figcaption::before,figure.effect-hera figcaption::after{    w
   padding-left: 3px;
   padding-top: 1px;
   position: absolute;
-  top: 0;
   width: 16px;
 }
 .checkbox input[type="checkbox"] {
@@ -887,7 +884,8 @@ figure.effect-hera figcaption::before,figure.effect-hera figcaption::after{    w
   background-color: #fb6d9d;
 }
 .checkbox label, .radio label{
-	    padding-left: 10px !important;
+	    padding-left: 10px;
+		line-height: 1.2;
 }
 .not-visible{
 	visibility:hidden;height:0px;
@@ -3335,4 +3333,40 @@ li.ptc-feature:last-child{
     animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
+}
+.panel-default>.panel-heading{
+	padding: 0;
+}
+.panel-group .panel {
+    border-radius: 0;
+	border:0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.panel-title>a{
+	display: block;
+	padding: 20px;
+}
+.nav.nav-tabs>li>a{
+	padding: 10px 15px;
+}
+.panel-group.iconposition_left .panel-heading,.nav-tabs.iconposition_left li>a{
+	padding-left: 20px;
+	position:relative;
+}
+.panel-group.iconposition_right .panel-heading,.nav-tabs.iconposition_right li>a{
+	padding-right: 20px;
+	position:relative;
+}
+.panel-group.iconposition_left .panel-heading .arrows,.nav-tabs.iconposition_left li .arrows{
+	position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.panel-group.iconposition_right .panel-heading .arrows,.nav-tabs.iconposition_right li .arrows{
+	position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
