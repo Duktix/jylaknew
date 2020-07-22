@@ -248,9 +248,9 @@ role="navigation" >
                                    <div class="widget form_widget form_widget_6">
 		<!-- Hubspot -->
 				<!-- Hubspot -->
-		<div class="alert alert-success collapse mb-10" id="form_5f1793e4a3690_success"></div>
+		<div class="alert alert-success collapse mb-10" id="form_5f17941eafb8f_success"></div>
 
-		<form class="row flex-wrap no-gutters form_6" id="form_5f1793e4a3690" method="post"
+		<form class="row flex-wrap no-gutters form_6" id="form_5f17941eafb8f" method="post"
 
 		
 		>
@@ -351,7 +351,7 @@ jQuery(document).ready(function(){
 			jQuery(this).find('input[type="text"]').val(texts);
 		})
 	}, 100);
-	jQuery("#form_5f1793e4a3690").validate({
+	jQuery("#form_5f17941eafb8f").validate({
 		rules:{
 		  			"field_690": {
 									required: true,
@@ -382,20 +382,20 @@ jQuery(document).ready(function(){
 							jQuery.ajax({
 						type: "POST",
 						url: "https://mx.frezit.com",
-						data: { data: jQuery('#form_5f1793e4a3690').serialize(), adminmail:'jylakweb@gmail.com', recipients:'jbora201@gmail.com', from: 'jylakweb@gmail.com', fromname: 'Jylak', subject:'From Jylak', replyto:'' },
+						data: { data: jQuery('#form_5f17941eafb8f').serialize(), adminmail:'jylakweb@gmail.com', recipients:'jbora201@gmail.com', from: 'jylakweb@gmail.com', fromname: 'Jylak', subject:'From Jylak', replyto:'' },
 						dataType: "text",
 						success: function(resultData){
 							if(resultData=='success'){
-																	jQuery('#form_5f1793e4a3690').find('button[type="submit"]').prop('disabled', true);
-									jQuery('#form_5f1793e4a3690_success').html('Please wait...');
-									jQuery('#form_5f1793e4a3690_success').addClass('in');
+																	jQuery('#form_5f17941eafb8f').find('button[type="submit"]').prop('disabled', true);
+									jQuery('#form_5f17941eafb8f_success').html('Please wait...');
+									jQuery('#form_5f17941eafb8f_success').addClass('in');
 									setTimeout(function(){
-										jQuery('#form_5f1793e4a3690_success').hide();
-										jQuery('#form_5f1793e4a3690_success').html('Thank you for your submission.');
-										jQuery('#form_5f1793e4a3690_success').fadeIn();
-										jQuery('#form_5f1793e4a3690').find('button[type="submit"]').prop('disabled', false);
-										jQuery('#form_5f1793e4a3690').trigger('reset');
-																					jQuery('#form_5f1793e4a3690').hide();
+										jQuery('#form_5f17941eafb8f_success').hide();
+										jQuery('#form_5f17941eafb8f_success').html('Thank you for your submission.');
+										jQuery('#form_5f17941eafb8f_success').fadeIn();
+										jQuery('#form_5f17941eafb8f').find('button[type="submit"]').prop('disabled', false);
+										jQuery('#form_5f17941eafb8f').trigger('reset');
+																					jQuery('#form_5f17941eafb8f').hide();
 																			}, 1000);
 																								}
 						}
@@ -421,7 +421,7 @@ jQuery(document).ready(function(){
     	
 
 
-        <div class="is-section is-section-100 is-light-text is-box is-align-center is-bg-dark">
+        <div class="is-section is-light-text is-box is-align-center is-bg-dark is-section-auto">
 
         <div class="is-overlay">
             <div class="is-overlay-bg" style="background-image: url(&quot;https://www.jylak.in/assets/images/samples/sample.jpg&quot;); display: none;"></div>
