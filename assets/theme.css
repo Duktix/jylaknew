@@ -70,7 +70,7 @@ body{
 	.menu-custom .menu-nav li a:not(.button){
 		position:relative;
 		background-color:rgba(255,255,255,0);
-		color:#0a0909;
+		color:#1f1717;
 		font-size:15px;
 		font-family:&quot;Montserrat&quot;;
 
@@ -97,11 +97,11 @@ body{
 	}
 	.menu-custom .menu-nav li:hover > a:not(.button),.menu-custom .menu-nav li.active > a:not(.button){
 		background-color:rgba(255,255,255,0);
-		color:#1fde82;
+		color:rgba(41,33,33,0.55);
 	}
 	.menu-custom .menu-nav>li>a:focus:not(.button), .menu-custom .menu-nav>li>a:hover:not(.button), .menu-custom .menu-nav li.active a:not(.button){
 		background-color:rgba(255,255,255,0);
-		color:#1fde82;
+		color:rgba(41,33,33,0.55);
 	}
 	.menu-custom .menu-nav li ul.sub-menu li a:not(.button){
 		background-color:#ffffff;
