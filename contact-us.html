@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	    <title>Jylak</title>
+	    <title>Jylak - Jylak</title>
 <meta name="keywords" content=""/>
 <meta name="description" content=""/>
 <meta name="copyright"content="">
@@ -19,13 +19,13 @@
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
-<meta name="og:title" content="Jylak"/>
+<meta name="og:title" content="Jylak - Jylak"/>
 <meta name="og:image" content="https://www.jylak.in/uploads/2019/07/logo_1419461679.png"/>
 <meta name="og:site_name" content=""/>
 <meta name="og:description" content=""/>
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:description" content="">
-<meta name="twitter:title" content="Jylak">
+<meta name="twitter:title" content="Jylak - Jylak">
 	
 	<script src="https://www.jylak.in/assets/js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -248,9 +248,9 @@ role="navigation" >
                                    <div class="widget form_widget form_widget_6">
 		<!-- Hubspot -->
 				<!-- Hubspot -->
-		<div class="alert alert-success collapse mb-10" id="form_5f1791a4c2e2c_success"></div>
+		<div class="alert alert-success collapse mb-10" id="form_5f1793e4a3690_success"></div>
 
-		<form class="row flex-wrap no-gutters form_6" id="form_5f1791a4c2e2c" method="post"
+		<form class="row flex-wrap no-gutters form_6" id="form_5f1793e4a3690" method="post"
 
 		
 		>
@@ -351,7 +351,7 @@ jQuery(document).ready(function(){
 			jQuery(this).find('input[type="text"]').val(texts);
 		})
 	}, 100);
-	jQuery("#form_5f1791a4c2e2c").validate({
+	jQuery("#form_5f1793e4a3690").validate({
 		rules:{
 		  			"field_690": {
 									required: true,
@@ -382,20 +382,20 @@ jQuery(document).ready(function(){
 							jQuery.ajax({
 						type: "POST",
 						url: "https://mx.frezit.com",
-						data: { data: jQuery('#form_5f1791a4c2e2c').serialize(), adminmail:'jylakweb@gmail.com', recipients:'jbora201@gmail.com', from: 'jylakweb@gmail.com', fromname: 'Jylak', subject:'From Jylak', replyto:'' },
+						data: { data: jQuery('#form_5f1793e4a3690').serialize(), adminmail:'jylakweb@gmail.com', recipients:'jbora201@gmail.com', from: 'jylakweb@gmail.com', fromname: 'Jylak', subject:'From Jylak', replyto:'' },
 						dataType: "text",
 						success: function(resultData){
 							if(resultData=='success'){
-																	jQuery('#form_5f1791a4c2e2c').find('button[type="submit"]').prop('disabled', true);
-									jQuery('#form_5f1791a4c2e2c_success').html('Please wait...');
-									jQuery('#form_5f1791a4c2e2c_success').addClass('in');
+																	jQuery('#form_5f1793e4a3690').find('button[type="submit"]').prop('disabled', true);
+									jQuery('#form_5f1793e4a3690_success').html('Please wait...');
+									jQuery('#form_5f1793e4a3690_success').addClass('in');
 									setTimeout(function(){
-										jQuery('#form_5f1791a4c2e2c_success').hide();
-										jQuery('#form_5f1791a4c2e2c_success').html('Thank you for your submission.');
-										jQuery('#form_5f1791a4c2e2c_success').fadeIn();
-										jQuery('#form_5f1791a4c2e2c').find('button[type="submit"]').prop('disabled', false);
-										jQuery('#form_5f1791a4c2e2c').trigger('reset');
-																					jQuery('#form_5f1791a4c2e2c').hide();
+										jQuery('#form_5f1793e4a3690_success').hide();
+										jQuery('#form_5f1793e4a3690_success').html('Thank you for your submission.');
+										jQuery('#form_5f1793e4a3690_success').fadeIn();
+										jQuery('#form_5f1793e4a3690').find('button[type="submit"]').prop('disabled', false);
+										jQuery('#form_5f1793e4a3690').trigger('reset');
+																					jQuery('#form_5f1793e4a3690').hide();
 																			}, 1000);
 																								}
 						}
