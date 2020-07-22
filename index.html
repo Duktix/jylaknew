@@ -514,9 +514,9 @@ role="navigation" >
 				<div class="widget form_widget form_widget_6">
 		<!-- Hubspot -->
 				<!-- Hubspot -->
-		<div class="alert alert-success collapse mb-10" id="form_5f178e0db381f_success"></div>
+		<div class="alert alert-success collapse mb-10" id="form_5f178e7956cee_success"></div>
 
-		<form class="row flex-wrap no-gutters form_6" id="form_5f178e0db381f" method="post"
+		<form class="row flex-wrap no-gutters form_6" id="form_5f178e7956cee" method="post"
 
 		
 		>
@@ -617,7 +617,7 @@ jQuery(document).ready(function(){
 			jQuery(this).find('input[type="text"]').val(texts);
 		})
 	}, 100);
-	jQuery("#form_5f178e0db381f").validate({
+	jQuery("#form_5f178e7956cee").validate({
 		rules:{
 		  			"field_690": {
 									required: true,
@@ -648,20 +648,20 @@ jQuery(document).ready(function(){
 							jQuery.ajax({
 						type: "POST",
 						url: "https://mx.frezit.com",
-						data: { data: jQuery('#form_5f178e0db381f').serialize(), adminmail:'jylakweb@gmail.com', recipients:'jbora201@gmail.com', from: 'jylakweb@gmail.com', fromname: 'Jylak', subject:'From Jylak', replyto:'' },
+						data: { data: jQuery('#form_5f178e7956cee').serialize(), adminmail:'jylakweb@gmail.com', recipients:'jbora201@gmail.com', from: 'jylakweb@gmail.com', fromname: 'Jylak', subject:'From Jylak', replyto:'' },
 						dataType: "text",
 						success: function(resultData){
 							if(resultData=='success'){
-																	jQuery('#form_5f178e0db381f').find('button[type="submit"]').prop('disabled', true);
-									jQuery('#form_5f178e0db381f_success').html('Please wait...');
-									jQuery('#form_5f178e0db381f_success').addClass('in');
+																	jQuery('#form_5f178e7956cee').find('button[type="submit"]').prop('disabled', true);
+									jQuery('#form_5f178e7956cee_success').html('Please wait...');
+									jQuery('#form_5f178e7956cee_success').addClass('in');
 									setTimeout(function(){
-										jQuery('#form_5f178e0db381f_success').hide();
-										jQuery('#form_5f178e0db381f_success').html('Thank you for your submission.');
-										jQuery('#form_5f178e0db381f_success').fadeIn();
-										jQuery('#form_5f178e0db381f').find('button[type="submit"]').prop('disabled', false);
-										jQuery('#form_5f178e0db381f').trigger('reset');
-																					jQuery('#form_5f178e0db381f').hide();
+										jQuery('#form_5f178e7956cee_success').hide();
+										jQuery('#form_5f178e7956cee_success').html('Thank you for your submission.');
+										jQuery('#form_5f178e7956cee_success').fadeIn();
+										jQuery('#form_5f178e7956cee').find('button[type="submit"]').prop('disabled', false);
+										jQuery('#form_5f178e7956cee').trigger('reset');
+																					jQuery('#form_5f178e7956cee').hide();
 																			}, 1000);
 																								}
 						}
