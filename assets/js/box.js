@@ -1,5 +1,5 @@
 ﻿$(document).ready(function (e) {
-
+    $('.menu-mobile-wrapper').css('margin-top', parseInt(parseInt($('#is-wrapper .header').height())/2)+'px');
     $('.is-arrow-down a').click(function (e) {
         if ($(this).parents(".is-section").nextAll('div:not(.is-hidden)').html()) { /* .hidden class can be used as an exception */
             $('html,body').animate({
@@ -65,7 +65,7 @@
         removeAnimation($(this));
     });
 
-    
+
 
 });
 
